@@ -41,7 +41,7 @@ export async function login(req, res, next) {
 
     const { password, isAdmin, ...others } = user._doc;
     res
-      .cookie("access_token", token, { httpOnly: true })
+      .cookie("access_token", token, { httpOnly: true, sameSite: "none" })
       .status(200)
       .json({ details: { ...others }, isAdmin });
   } catch (err) {
