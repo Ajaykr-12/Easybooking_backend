@@ -34,7 +34,6 @@ mongoose.connection.on("connected", () => {
 app.use(
   cors({
     origin: "*",
-    credentials: true,
   })
 );
 
