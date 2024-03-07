@@ -1,6 +1,6 @@
 import express, { Router } from "express";
 import dotenv from "dotenv";
-import mongoose from "mongoose";
+import mongoose, { get } from "mongoose";
 import hotelsRoute from "./routes/hotels.js";
 import authRoute from "./routes/auth.js";
 import roomsRoute from "./routes/rooms.js";
@@ -35,6 +35,7 @@ app.use(
   cors({
     origin: "http://localhost:3000",
     credentials: true,
+    methods: [GET, POST, PUT, DELETE],
   })
 );
 
