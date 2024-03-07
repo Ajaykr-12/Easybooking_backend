@@ -33,7 +33,7 @@ mongoose.connection.on("connected", () => {
 //middleware
 app.use(
   cors({
-    origin: "*",
+    origin: "http://localhost:3000/",
   })
 );
 
