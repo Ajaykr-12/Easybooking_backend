@@ -35,7 +35,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://easy-booking-app.netlify.app",
+      "https://easybooking-app.netlify.app",
       "https://easybooking-admin-pannel.netlify.app",
     ],
     credentials: true,
