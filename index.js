@@ -33,9 +33,12 @@ mongoose.connection.on("connected", () => {
 //middleware
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://easy-booking-app.netlify.app"],
+    origin: [
+      "http://localhost:3000",
+      "https://easy-booking-app.netlify.app",
+      "https://easybooking-admin-pannel.netlify.app",
+    ],
     credentials: true,
-    methods: ["GET", "POST", "DELETE", "PUT"],
   })
 );
 
